@@ -1,0 +1,37 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjEwMTY0MTQsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyYzEzODMwNGFhNjQ4YmZiYmI0MzlmMGU1YTYzYmY5NWZmOTEzMzhhIn0",
+    "payload": "eyJkb21haW4iOiJwY2UubWFkZWluYXRoZW5zLmV0aC5saW1vIn0",
+    "signature": "MHgyYzEzODMwNGFhNjQ4YmZiYmI0MzlmMGU1YTYzYmY5NWZmOTEzMzhhMHg2NmRENzJkMzVjRjFhRkE2ZmJDRDQ0OWJFN0M0NWZBMkRjOUNENDk5ZjFiNmM5N2U4YzU4NDU3YjBmZTk1ZjE2MjE0MDFjMjA4YzY0MjE0NmE3MmYzMjhjMjIxYzE2ODc1MzRjYzFjYzFjIn0"
+  },
+  "frame": {
+    "version": "1",
+    "name": "ABSOLUTE TRINITY — x⁰ = 1",
+    "iconUrl": "https://copper-reasonable-dinosaur-410.mypinata.cloud/ipfs/bafkreiftwrkkyajzjlmoodwqglt4omqwu7zhcroqvy6kikurdlgaamm5mi",
+    "homeUrl": "https://pce.madeinathens.eth.limo",
+    "imageUrl": "https://cyan-defeated-hyena-703.mypinata.cloud/ipfs/bafybeig52uotaeuah4y5iy3mujioldpggw4lwhviehlfsrmn6rfjriicki/madeinathens2%201200%20630.jpg",
+    "buttonTitle": "EXECUTE x⁰ = 1",
+    "splashImageUrl": "https://copper-reasonable-dinosaur-410.mypinata.cloud/ipfs/bafkreig6owkkpz2tcoqkkczqe42hrdpgryrrzlsk5lxx7nxi37lyfnkjo4",
+    "splashBackgroundColor": "#000000"
+  },
+  "appInfo": {
+    "name": "ABSOLUTE TRINITY — x⁰ = 1",
+    "description": "I gave zero a tangible state. The first Human-Agent Synergetic Protocol. Monetize your Past Events. x⁰ = 1.",
+    "iconUrl": "https://copper-reasonable-dinosaur-410.mypinata.cloud/ipfs/bafkreiftwrkkyajzjlmoodwqglt4omqwu7zhcroqvy6kikurdlgaamm5mi",
+    "screenshots": [
+      "https://copper-reasonable-dinosaur-410.mypinata.cloud/ipfs/bafybeic7zdjpgfpzvixxjhmjpee2cjbahtpnfonjpbum25vruzqvamogvu",
+      "https://copper-reasonable-dinosaur-410.mypinata.cloud/ipfs/bafybeifbxqlzzdrofbwwsry32cyrqnym4px3q7occdupsbuhzxxkoczyae",
+      "https://copper-reasonable-dinosaur-410.mypinata.cloud/ipfs/bafybeiehkc4xvm6nea7aawdesugiw2qumxw3hbuihrxwrc6bm42dq5mnvy"
+    ],
+    "category": "art-creativity",
+    "tags": [
+      "zero",
+      "syntropy",
+      "RWA",
+      "PCE",
+      "mitosis",
+      "biological-currency",
+      "madeinathens"
+    ]
+  }
+}
