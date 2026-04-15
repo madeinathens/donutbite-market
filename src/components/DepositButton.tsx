@@ -1,7 +1,7 @@
 import { useAccount, useConnect, useDisconnect } from "wagmi";
 import { injected, walletConnect } from "wagmi/connectors";
 
-const projectId = "c4f79cc821944d9680842e34466bfbd6";
+const projectId = "6ade73cf636a26265b5243cf9cf93f22";
 
 export default function ConnectButton() {
   const { address, isConnected } = useAccount();
