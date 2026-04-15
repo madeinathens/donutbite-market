@@ -1,5 +1,7 @@
 import { useAccount, useConnect, useDisconnect } from "wagmi";
-import { injected } from "wagmi/connectors";
+import { injected, walletConnect } from "wagmi/connectors";
+
+const projectId = "6ade73cf636a26265b5243cf9cf93f22";
 
 export default function ConnectButton() {
   const { address, isConnected } = useAccount();
@@ -41,9 +43,17 @@ export default function ConnectButton() {
     );
   }
 
+  const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+
   return (
     <button
-      onClick={() => connect({ connector: injected() })}
+      onClick={() => {
+        if (isMobile) {
+          connect({ connector: walletConnect({ projectId }) });
+        } else {
+          connect({ connector: injected() });
+        }
+      }}
       style={{
         background: "#e8a826",
         border: "none",

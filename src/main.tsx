@@ -7,7 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./index.css";
 import App from "./App.tsx";
 
-const projectId = "c4f79cc821944d9680842e34466bfbd6";
+const projectId = "6ade73cf636a26265b5243cf9cf93f22";
 
 const config = createConfig({
   chains: [base],
