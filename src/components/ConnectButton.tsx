@@ -1,10 +1,11 @@
-import { useAccount, useConnect, useDisconnect } from "wagmi";
+import { useAccount, useConnect, useDisconnect, useEnsName } from "wagmi";
 import { injected, walletConnect } from "wagmi/connectors";
 
 const projectId = "6ade73cf636a26265b5243cf9cf93f22";
 
 export default function ConnectButton() {
   const { address, isConnected } = useAccount();
+  const { data: ensName } = useEnsName({ address, chainId: 1 });
   const { connect } = useConnect();
   const { disconnect } = useDisconnect();
 
@@ -14,26 +15,26 @@ export default function ConnectButton() {
         <div
           style={{
             padding: "8px 16px",
-            background: "rgba(45,224,122,0.1)",
-            border: "1px solid rgba(45,224,122,0.3)",
+            background: "var(--amber-glow)",
+            border: "1px solid var(--amber-dim)",
             fontFamily: "'Space Mono', monospace",
             fontSize: "10px",
             letterSpacing: "0.2em",
-            color: "#2de07a",
+            color: "var(--amber)",
           }}
         >
-          {address.slice(0, 6)}...{address.slice(-4)}
+          {ensName ?? `${address.slice(0, 6)}...${address.slice(-4)}`}
         </div>
         <button
           onClick={() => disconnect()}
           style={{
             background: "transparent",
-            border: "1px solid rgba(212,207,200,0.15)",
+            border: "1px solid var(--border-soft)",
             padding: "8px 16px",
             fontFamily: "'Space Mono', monospace",
-            fontSize: "10px",
+            fontSize: "9px",
             letterSpacing: "0.2em",
-            color: "#6b665f",
+            color: "var(--chalk-dim)",
             cursor: "pointer",
           }}
         >
@@ -55,23 +56,23 @@ export default function ConnectButton() {
         }
       }}
       style={{
-        background: "#e8a826",
+        background: "var(--amber)",
         border: "none",
         padding: "10px 24px",
         fontFamily: "'Space Mono', monospace",
         fontSize: "10px",
         letterSpacing: "0.25em",
         fontWeight: "700",
-        color: "#050608",
+        color: "var(--void)",
         cursor: "pointer",
         transition: "all 0.2s",
       }}
       onMouseOver={(e) => {
-        (e.target as HTMLButtonElement).style.boxShadow =
+        (e.currentTarget as HTMLButtonElement).style.boxShadow =
           "0 0 24px rgba(232,168,38,0.4)";
       }}
       onMouseOut={(e) => {
-        (e.target as HTMLButtonElement).style.boxShadow = "none";
+        (e.currentTarget as HTMLButtonElement).style.boxShadow = "none";
       }}
     >
       CONNECT WALLET

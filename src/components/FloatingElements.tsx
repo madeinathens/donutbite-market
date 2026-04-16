@@ -19,7 +19,7 @@ export default function FloatingElements() {
       <div
         style={{
           position: "fixed",
-          right: "20px",
+          right: "8px",
           top: "50%",
           transform: "translateY(-50%)",
           zIndex: 9999,
